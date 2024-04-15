@@ -42,8 +42,8 @@ async def validate_key(session: aiohttp.ClientSession, key: str):
 
 async def main():
     async with aiohttp.ClientSession() as session:  
-        await asyncio.gather(*(get_keys(session, char, i) for i in range(0, 19, 10) for char in chars))
-        await asyncio.gather(*(validate_key(session, key) for key in keys))
+        await asyncio.gather(*[get_keys(session, char, i) for i in range(0, 11, 10) for char in chars])
+        await asyncio.gather(*[validate_key(session, key) for key in keys])
 
 if __name__ == "__main__":
     asyncio.run(main())
