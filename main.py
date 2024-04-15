@@ -26,7 +26,7 @@ async def get_keys(session: aiohttp.ClientSession, char: str, i: int):
                         print(f"Found key: {key[0] + key[1]}")
                     keys.add(key[0] + key[1])
     except aiohttp.ClientResponseError as e:
-        print("Error: ", e)
+        print(f"Error: {e}")
 
 async def validate_key(session: aiohttp.ClientSession, key: str):
     try:
