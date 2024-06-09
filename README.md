@@ -1,7 +1,7 @@
-# OpenAI Key Scraper
-
 > [!WARNING]  
 > This script does not work anymore, as HuggingFace made a filter for it.
+
+# OpenAI Key Scraper
 
 Simple OpenAI key scraper for leaked keys in HuggingFace
 
